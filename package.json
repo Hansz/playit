@@ -1,0 +1,40 @@
+{
+  "name": "@creativeitch/playit",
+  "version": "1.0.0",
+  "description": "Demo project so demonstrate that the Playwright Test for VSCode extension does not work properly when the project is of \"type: module\" ",
+  "type": "module",
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
+  "files": [
+    "dist/*",
+    "src/components.js",
+    "src/assets/**/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "playwright",
+    "vscode",
+    "extension"
+  ],
+  "author": "Hans van der Zwet",
+  "license": "ISC",
+  "private": false,
+  "peerDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@playwright/test": "^1.30.0",
+    "@rollup/plugin-image": "^3.0.2",
+    "babel-loader": "^8.3.0",
+    "css-loader": "^5.2.7",
+    "event-emitter": "^0.3.5",
+    "rollup": "^3.2.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-vue": "^6.0.0"
+  }
+}
